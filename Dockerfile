@@ -8,9 +8,9 @@ RUN apt-get update \
 
 WORKDIR /usr/src/app
 COPY Gemfile* ./
-RUN npm install --global yarn && bundle exec rails webpacker:install && bundle install
+RUN bundle install && npm install --global yarn
 COPY . .
-RUN bundle exec rails webpacker:compile
+RUN bundle exec rails webpacker:install && bundle exec rails webpacker:compile
 
 EXPOSE 3000
 CMD ["/usr/local/bin/bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
