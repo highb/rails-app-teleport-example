@@ -15,7 +15,7 @@ database:
   port: 5432
 
 image:
-  repository: highb/rails-app
+  repository: docker.pkg.github.com/highb/rails-app-teleport-example/rails-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   #tag: "0.0.7"
