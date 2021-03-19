@@ -3,22 +3,29 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
+## Ruby version
 
-* Ruby version
+See: [.ruby-version](.ruby-version)
 
-* System dependencies
+## System dependencies
 
-* Configuration
+* Helm
+* Docker
+* npm
+* Ruby/Bundler
+* Minikube/k3s for local testing
 
-* Database creation
+## Configuration
 
-* Database initialization
+* Override values in helm chart
 
-* How to run the test suite
+## Services
 
-* Services (job queues, cache servers, search engines, etc.)
+* rails-app (Basic rails app)
+* (aspiration) teleport-kube-agent
+* (aspiration) postgres
 
-* Deployment instructions
+## Deployment instructions
 
-* ...
+* Generate teleport cluster join token
+* (aspiration) helm install chart with token/URL
