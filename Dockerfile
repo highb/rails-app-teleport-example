@@ -8,7 +8,7 @@ RUN apt-get update \
 
 WORKDIR /usr/src/app
 COPY Gemfile* ./
-RUN bundle install && npm install --global yarn && bundle exec rails webpacker:install
+RUN npm install --global yarn && bundle exec rails webpacker:install && bundle install
 COPY . .
 RUN bundle exec rails webpacker:compile
 
