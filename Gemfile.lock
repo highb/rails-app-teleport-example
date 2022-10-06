@@ -60,8 +60,8 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
-    addressable (2.7.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     autoprefixer-rails (10.2.4.0)
       execjs
     bindex (0.8.1)
@@ -125,10 +125,12 @@ GEM
       racc (~> 1.4)
     nokogiri (1.11.2-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.11.2-x86_64-linux)
+      racc (~> 1.4)
     pg (1.2.3)
     pg (1.2.3-x64-mingw32)
     pg (1.2.3-x86-mingw32)
-    public_suffix (4.0.6)
+    public_suffix (5.0.0)
     puma (5.2.2)
       nio4r (~> 2.0)
     puma (5.2.2-java)
@@ -237,6 +239,7 @@ PLATFORMS
   x86-mingw32
   x86-mswin32
   x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   bootstrap-sass (~> 3.4.1)
